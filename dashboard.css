@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    height: 98vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+/* NAV */
+.nav {
+    grid-column: 2;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    padding: 5px;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 4fr;
+}
+
+.sidebar > ul {
+    list-style-type: none;
+}
+
+.main-menu {
+    display: grid;
+}
+
+.help {
+    display: grid;
+}
+
+/* MAIN */
+.main {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards {
+    padding: 20px;
+}
