@@ -29,9 +29,10 @@
 .search-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: center;
+    grid-template-columns: 50px 1fr;
     justify-items: center;
+    gap: 10px;
+    padding-left: 80px;
 }
 
 .search-container > svg {
@@ -39,18 +40,34 @@
 }
 
 .search-container > input {
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgb(214, 214, 214);
+    width: 70%;
+    justify-self: start;
 }
 
 .profile-corner {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 1fr 100px 2fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.profile-corner > svg {
+    width: 30px;
+    justify-self: end;
 }
 
 .profile-corner > img {
-    max-height: 50px;
+    max-height: 60px;
+}
+
+.profile-corner > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-self: start;
 }
 
 .profile-expand {
@@ -64,7 +81,7 @@
 
 .profile-expand > img {
     grid-row: 1 / 3;
-    max-height: 50px;
+    max-height: 100px;
 }
 
 .user-buttons {
