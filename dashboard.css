@@ -221,7 +221,7 @@ body {
     grid-column: 2;
     grid-row: 2;
 
-    max-height: 79vh;
+    max-height: 79.5vh;
     background-color: #E2E8F0;
 
     display: grid;
@@ -235,7 +235,7 @@ body {
     padding: 20px;
 
     display: grid;
-    grid-template-rows: 1fr repeat(autofit, 1fr);
+    grid-template-rows: 50px repeat(auto-fill, minmax(200px, 1fr));
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
@@ -255,7 +255,7 @@ body {
     border-left: 1rem solid #F1AA81;
 
     display: grid;
-    grid-template-rows: repeat(autofit, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .cards > h4 {
@@ -299,9 +299,10 @@ body {
 .announcements {
     margin: 0;
     padding: 20px;
+    max-height: 50px;
 
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 50px 3fr;
     gap: 20px;
 }
 
@@ -312,13 +313,28 @@ body {
 
 .announce-container {
     display: grid;
-    grid-template-rows: repeat(autofit, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+    padding: 40px;
     border-radius: 15px;
     background-color: white;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.announce-container > div > h4 {
+    font-size: 0.75rem;
+}
+
+.announce-container > div > h4 + p {
+    font-size: 0.75rem;
 }
 
 .announce-cards {
     margin: 0;
+}
+
+.border-divs {
+    border-bottom: 5px gray;
 }
